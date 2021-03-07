@@ -4,7 +4,7 @@ Using requests package in python to post feedback to website.
 
 ## Get Started
 1. Clone this repository
-2. Before you run the script, check your OS in the script. If you use Linux, make sure you uncomment the linux line in [run.py](run.py). Default is `For Windows`.
+2. Before you run the script, check`feedback_path` variable in the script. If you use Linux, make sure you uncomment the linux line in [run.py](run.py). Default `feedback_path` is `For Windows`.
 3. The `website` variable is the place to post the dictionary. Make sure you change `website` variable before running it.
 
 ## Example

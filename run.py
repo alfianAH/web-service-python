@@ -14,6 +14,10 @@ website = "http://34.71.94.107/feedback/"  # Temporary website from Qwiklabs
 
 
 def get_texts():
+    """
+    Get texts in data/feedback and make it a dictionary
+    :return: List of Dictionary of feedback
+    """
     list_dict = []
     feedback_keys = ["title", "name", "date", "feedback"]
     files = os.listdir(feedback_path)
@@ -33,6 +37,11 @@ def get_texts():
 
 
 def send_data_to_website(feedback_dict):
+    """
+    POST the feedback_dict to website
+    :param feedback_dict: The processed dictionary
+    :return:
+    """
     response = requests.post(website, data=feedback_dict)
     if response.status_code == 201:
         print("Success")
